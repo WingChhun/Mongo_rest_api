@@ -1,0 +1,26 @@
+{
+  "name": "mongo_rest_api",
+  "version": "1.0.0",
+  "description": "Example of a REST api for a sports team with players, will test making endpoint requests using POSTMAN.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WingChhun/Mongo_rest_api.git"
+  },
+  "author": "James Chhun",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WingChhun/Mongo_rest_api/issues"
+  },
+  "homepage": "https://github.com/WingChhun/Mongo_rest_api#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "method-override": "^2.3.10",
+    "mongoose": "^5.0.3"
+  }
+}
