@@ -1,21 +1,25 @@
 var mongoose = require("mongoose"),
-Schema = mongoose.Schema,
-DB_URL = process.env.DB_URL || "mongodb://localhost/sports_api";
+	Schema = mongoose.Schema,
+	DB_URL = process.env.DB_URL || "mongodb://localhost/sports_api";
 
 
 
-mongoose.set('debug',true);
+mongoose.set('debug', true);
 mongoose.connect(DB_URL);
 mongoose.connection
-	.once("open",()=> {
+	.once("open", () => {
 		//Display to user successfully connected to DB
 		console.log("connection made to db")
 	})
-	.on("error", (error)=> {
+	.on("error", (error) => {
 		//Display Connection to DB error
 		console.log("ERROR connecting to db")
 	})
 mongoose.Promise = Promise; //allow use of promises
 
 
-var sportSchema = new Schema;
+//Export Sport schema
+module.exports.Team = require("./team");
+module.exports.Player = require("./player");
+module.exports.Sport = require("./Sport");
+
