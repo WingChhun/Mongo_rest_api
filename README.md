@@ -16,14 +16,16 @@ Create a Node/Express/ MongoDB app that utilizes a Sport schema
     - id, name, jerseynum, team
 
 
-#Timeline
+## Timeline
 
  - Created and test App using POSTMAN
  - Outputs to routes in JSON format
 
-#Conclusion
+## Conclusion
  - Demonstrate use of Javascript Promises, creating REST API, and designing schemas that are functional over multiple schemas embedded in one another.
 
- #Notes
+ ## Notes
 
  - This app only includes GET/POST/ and SHOW(GET) Routes
+ - Have no refactored/organized code 
+   -Will do in near future and README will be updated 
